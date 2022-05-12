@@ -9,15 +9,15 @@ app.use( express.json() );
 app.use( express.urlencoded({ extended: true }) );
 
 // we can create a function to return a random / fake "Product"
-const createProduct = () => {
-  const newFake = {
-      name: faker.commerce.productName(),
-      price: faker.commerce.price(),
-      department: faker.commerce.department()
-  };
+// const createProduct = () => {
+//   const newFake = {
+//       name: faker.commerce.productName(),
+//       price: faker.commerce.price(),
+//       department: faker.commerce.department()
+//   };
 
-  return newFake;
-};
+//   return newFake;
+// };
 
 const userObj = () => {
   const user = {
