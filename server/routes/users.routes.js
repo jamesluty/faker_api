@@ -13,12 +13,12 @@ const { faker } = require('@faker-js/faker');
 
 const userObj = () => {
     const user = {
+        _id: 1,
         password: faker.internet.password(),
         email: faker.internet.email(),
         phoneNumber: faker.phone.phoneNumber(),
         lastName: faker.name.firstName(),
         firstName: faker.name.lastName(),
-        _id: 1
     };
 
     return user;
